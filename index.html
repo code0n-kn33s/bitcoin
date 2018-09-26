@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/select.css">
+  <link rel="stylesheet" href="./css/switch.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+  <div class="currency">
+    <div class="container">
+      <div class="currency-exchange col-12">
+        <div class="currency-exchange-title col-8">Select your currency to exchange: </div>
+        <div class="currency-exchange-selection col-4">
+          <div class="custom-select">
+            <select>
+              <option value="0">USD</option>
+              <option value="1">EUR</option>
+              <option value="2">RUB</option>
+              <option value="3">GBP</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="currency-type">
+        <div class="currency-type-card ethereum col-4">
+          <div class="currency-type-card-title" data-attr="title"></div>
+          <div class="currency-type-card-img">
+            <img src="./assets/img/currency-L.png" alt="currency">
+          </div>
+
+          <ul class="currency-type-card-price-list">
+            <li class="price">
+              <p class="title">Price</p>
+              <p class="value"></p>
+            </li>
+            <li class="percent">
+              <p class="title">Percent change</p>
+              <p>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round switcher"></span>
+                </label>
+              </p>
+            </li>
+            <li class="hour">
+              <p class="title">Hour change</p>
+              <p class="value">-266%</p>
+            </li>
+            <li class="day">
+              <p class="title">Day change</p>
+              <p class="value">+266%</p>
+            </li>
+            <li class="week">
+              <p class="title">Week change</p>
+              <p class="value">-266%</p>
+            </li>
+            <li class="month">
+              <p class="title">Month change</p>
+              <p class="value">+266%</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="./js/select.js"></script>
+  <script src="./js/json.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

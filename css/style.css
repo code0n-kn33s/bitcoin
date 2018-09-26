@@ -1,0 +1,97 @@
+:root {
+  --bd-currency: #2b3c46;
+  --ex-col-cards: #d2d3d3;
+  --card-color-green: #578940;
+  --card-color-red: #c80e24;
+  --color-percent: #6e6e6e;
+}
+.currency {
+  background: #1b232b url(../assets/img/bg.png) no-repeat center top;
+  height: 100%;
+  padding-top: 70px;
+}
+.container {
+  width: 987px;
+  margin: auto;
+}
+[class*="col-"] {
+  display: inline-block;
+  margin-left: -4px;
+}
+.currency-exchange {
+  background-color: rgba(0,0,0,.2);
+  border-radius: 8px;
+  border: 1px solid var(--bd-currency);
+  line-height: 95px;
+}
+.currency-exchange .custom-select {
+  max-width: 300px;
+  line-height: 20px;
+}
+.currency-exchange-selection {
+  padding-left: 10px;
+}
+.currency-exchange-title,
+.currency-exchange-selection {
+  vertical-align: middle;
+}
+.currency-exchange-title {
+  text-align: center;
+  font-size: 27px;
+  color: #ffffff;
+}
+.currency-type {
+  display: flex;
+  margin-top: 50px;
+}
+.currency-type-card {
+  margin-right: 30px;
+  background: radial-gradient(circle closest-corner at 59% 29%, rgba(255,255,255,0.6), transparent 82%),linear-gradient( 160deg, #2e4a35, #445e4b, #445e4b 40%, #445e4b 40%, #2d4934 40%);
+  border-radius: 8px;
+  position: relative;
+}
+
+.currency-type-card.ethereum {
+  background: radial-gradient(circle closest-corner at 59% 29%, rgba(255,255,255,0.6), transparent 82%),linear-gradient( 160deg, #2e4a35, #445e4b, #445e4b 40%, #445e4b 40%, #2d4934 40%);
+}
+.currency-type-card.litecoin {
+  background: radial-gradient(circle closest-corner at 59% 29%, rgba(255,255,255,0.6), transparent 82%),linear-gradient( 160deg, #3a3a3a, #808080, #808080 40%, #808080 40%, #343434 40%);
+}
+.currency-type-card.bitcoin  {
+  background: radial-gradient(circle closest-corner at 59% 29%, rgba(255,255,255,0.6), transparent 82%),linear-gradient( 160deg, #3c1d0b, #765230, #765230 40%, #765230 40%, #301103 40%);
+}
+
+.currency-type-card:last-child {
+  margin-right: 0;
+}
+.currency-type-card-title {
+  text-align: center;
+  color: #ffffff;
+  line-height: 70px;
+  font-size: 20px;
+}
+.currency-type-card-img {
+  text-align: center;
+  height: 125px;
+}
+.currency-type-card-price-list {
+  padding: 0px 33px 20px 30px;
+}
+.currency-type-card-price-list li {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-percent);
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.currency-type-card-price-list .price .value {
+  color: #ffffff !important;
+}
+.currency-type-card-price-list .price {
+  color: #ffffff;
+  font-size: 21px;
+}
+.currency-type-card-price-list .percent {
+  color: #ffffff;
+  font-size: 18px;
+}

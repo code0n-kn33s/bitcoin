@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1020px) { 
+  .container {
+    width: 730px;
+  }
+}
+@media only screen and (max-width: 768px) { 
+  .container {
+    width: 460px;
+  }
+  [class*="col-"] { 
+    width: 100%; 
+  }
+  .currency-type {
+    flex-direction: column;
+  }
+  .currency-exchange {
+    line-height: 3;
+    padding: 20px 0;
+  }
+  .currency-type-card {
+    margin-bottom: 10px;
+  }
+  .custom-select {
+    margin: auto;
+  }
+  html, body {
+    height: auto;
+  }
+  .currency-exchange-title {
+    font-size: 22px;
+  }
+  .currency {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 480px) { 
+  .container {
+    width: 90%;
+  }
+  .currency-exchange-title {
+    font-size: 18px;
+  }
+}
